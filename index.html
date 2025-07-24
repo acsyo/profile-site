@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Casey Brown | Security Analyst</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #f3f6f4;
+      font-family: 'Inter', sans-serif;
+      color: #333;
+    }
+    header {
+      background-color: #e0f0e9;
+      padding: 3rem 0;
+    }
+    h1.display-4 {
+      font-size: 3rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .lead {
+      font-size: 1.25rem;
+      margin-bottom: 0.25rem;
+    }
+    .card.section-card {
+      border: none;
+      border-radius: 1rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card.section-card:hover {
+      transform: scale(1.01);
+    }
+    .card-header {
+      background-color: #d3ece1;
+      font-weight: 500;
+      padding: 1rem 1.25rem;
+      font-size: 1.2rem;
+    }
+    .card-body {
+      background-color: #ffffff;
+      padding: 1rem 1.25rem;
+    }
+    .accordion-button {
+      background-color: #f0f5f2;
+      font-weight: 500;
+    }
+    .accordion-body ul {
+      padding-left: 1.2rem;
+    }
+    a {
+      color: #2b4f43;
+    }
+    a:hover {
+      color: #16372c;
+    }
+      .card-header::after {
+      content: "▼";
+      float: right;
+      transition: transform 0.3s ease;
+    }
+    .collapsed .card-header::after {
+      transform: rotate(-90deg);
+    }
+    .accordion-button::after {
+      content: none;
+    }
+    @media (max-width: 768px) {
+      h1.display-4 {
+        font-size: 2.25rem;
+      }
+      .lead {
+        font-size: 1rem;
+      }
+    }
+</style>
+</head>
+<body>
+  <header class="text-center">
+    <div class="container">
+      <h1 class="display-4">Casey Brown</h1>
+      <p class="lead">Security Analyst · Ministry of Transport</p>
+      <p>B.Sc. Computer Science · Holon Institute of Technology</p>
+      <div>
+        <a href="mailto:acsyoma1@gmail.com" class="text-dark me-3"><i class="fas fa-envelope"></i> Email</a>
+        <a href="https://linkedin.com/in/mscaseybrown" class="text-dark me-3" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+        <a href="https://github.com/acsyo" class="text-dark" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container py-5">
+
+    <!-- Summary Section -->
+    <div class="card section-card mb-4">
+      <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#summarySection" role="button" aria-expanded="true" aria-controls="summarySection">
+        <div class="card-header">Summary</div>
+      </a>
+      <div id="summarySection" class="collapse show">
+        <div class="card-body">
+          <ul>
+            <li>Security Analyst with public sector experience in vulnerability tracking, risk assessments, and coordination with a national-level SOC.</li>
+            <li>Proficient with SIEM platforms such as ArcSight and Splunk for rule logic review, alert investigation, and report extraction.</li>
+            <li>Skilled in using Panorays to assess organizational security posture, report findings, and support stakeholder remediation efforts.</li>
+            <li>Completed labs focused on TCP-based attacks, packet inspection (Wireshark), and Linux/Kali forensics and usage.</li>
+            <li>Strong foundation in Python and network protocols, with an analytical mindset for identifying and mitigating security threats.</li>
+            <li>Currently pursuing a B.Sc. in Computer Science at HIT, developing advanced capabilities in detection and response workflows.</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Work Experience Section -->
+    <div class="card section-card mb-4">
+      <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#experienceSection" role="button" aria-expanded="true" aria-controls="experienceSection">
+        <div class="card-header">Work Experience</div>
+      </a>
+      <div id="experienceSection" class="collapse show">
+        <div class="card-body">
+          <div class="accordion" id="experienceAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading1">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#exp1" aria-expanded="true" aria-controls="exp1">
+                  Security Analyst – Ministry of Transport (Sep 2024 – Present)
+                </button>
+              </h2>
+              <div id="exp1" class="accordion-collapse collapse show" data-bs-parent="#experienceAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Performed risk assessments for transportation entities</li>
+                    <li>Monitored alerts and escalated findings with CERT-IL</li>
+                    <li>Tracked remediation actions and SIEM rule logic</li>
+                    <li>Produced technical reports and regulatory documentation</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="heading2">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#exp2" aria-expanded="false" aria-controls="exp2">
+                  Event Assistant – Pitronot BeIruim (June 2021 – August 2024)
+                </button>
+              </h2>
+              <div id="exp2" class="accordion-collapse collapse" data-bs-parent="#experienceAccordion">
+                <div class="accordion-body">
+                  <ul>
+                    <li>Supported large-scale events including CyberWeek, Google Cloud, AWS Summit</li>
+                    <li>Coordinated logistics with vendors and teams</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Education -->
+    <div class="card section-card mb-4">
+      <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#educationSection" role="button">
+        <div class="card-header">Education</div>
+      </a>
+      <div id="educationSection" class="collapse">
+        <div class="card-body">
+          <p>B.Sc. in Computer Science, Holon Institute of Technology (HIT)<br>October 2022 – September 2025 | GPA: 87</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Skills -->
+    <div class="card section-card mb-4">
+      <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#skillsSection" role="button">
+        <div class="card-header">Technical Skills</div>
+      </a>
+      <div id="skillsSection" class="collapse">
+        <div class="card-body">
+          <ul>
+            <li>SIEM & Tools: Splunk, ArcSight, Panorays</li>
+            <li>Detection & Response: Alert investigation, SOAR/EDR basics</li>
+            <li>Programming: Python, C/C++, C#</li>
+            <li>Networking & OS: Linux (Kali), Wireshark, TCP/IP, packet analysis</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Certifications -->
+    <div class="card section-card mb-4">
+      <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#certsSection" role="button">
+        <div class="card-header">Certifications</div>
+      </a>
+      <div id="certsSection" class="collapse">
+        <div class="card-body">
+          <p>Cybersecurity Fundamentals – CERT-IL (Dec 2024)<br>Certificate of Distinction</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Volunteering -->
+    <div class="card section-card mb-4">
+      <a class="text-decoration-none text-dark" data-bs-toggle="collapse" href="#volunteerSection" role="button">
+        <div class="card-header">Volunteering</div>
+      </a>
+      <div id="volunteerSection" class="collapse">
+        <div class="card-body">
+          <p>Private English Tutor – ESRA Educational Program (Nov 2022 – Aug 2023)<br>Delivered tailored English lessons to students (grades 7–11), focused on confidence and fluency.</p>
+        </div>
+      </div>
+    </div>
+    
+  </main>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
